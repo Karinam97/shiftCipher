@@ -11,5 +11,6 @@
 - Any other characters are not encrypted and stays the same
 - Interactivity has been added to arrows which are used to change shift value from 0 to 25 
 - It has simple design
+- Responsive on mobile devices
 
 * * available : https://karinam97.github.io/shiftCipher/
