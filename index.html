@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypter/Decrypter</title>
+  </head>
+  <body>
+    <h1>A Shift Cipher</h1>
+    <p>This little project takes a plain text message and shifts each letter forward or backward in the alphabet by a given number.</p>
+    <main>
+      <div class="shifting">
+        <img src="./images/left-arrow.svg" class='arrow' id='left-arrow' alt="">
+        <label for="">Select shift value:</label>
+        <input type="number" value='0' name="" min='0' >
+        <img src="./images/left-arrow.svg" class='arrow' id='right-arrow' alt="">
+      </div>
+      <div class="cipher">
+        <div class="encrypt-string">
+          <h2>Encrypt your text</h2>
+          <input onfocus="this.value=''" type="text" name="">
+          <button type="button" id="encrypt-button">Try</button>
+          <!-- text will be updated once encrypted -->
+          <p id=encryptedText> . . . </p>
+        </div>
+        <div class="decrypt-string">
+          <h2>Decrypt your text</h2>
+          <input onfocus="this.value=''" type="text" name="decrypt">
+          <button type="button" id="decrypt-button">Try</button>
+          <!-- text will be updated once decrypted -->
+          <p id=decryptedText> . . . </p>
+        </div>
+      </div>
+      <div class="examples">
+        <h2>Examples:</h2>
+        <p>Your text: "Hello!" with the shift value of 2 will be: "JGNNQ!""</p>
+        <p>Decrypting back the same string ("JGNNQ!") with shift value of 2, should decrypt it back to "Hello!" </p>
+      </div>
+
+    </main>
+    <!-- adding script -->
+    <script type="text/javascript" src='./cipher.js'></script>
+    <script type="text/javascript" src='./main.js'></script>
+
+  </body>
+</html>
